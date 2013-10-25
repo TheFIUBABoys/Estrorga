@@ -10,6 +10,7 @@
 \usepackage{pdfpages}
 \usepackage{enumitem}
 \usepackage{float}
+\usepackage{array}
 \title{		\textbf{Título}}
 
 \author{	Lucas Simonelli, \textit{Padrón Nro. 93111}                     \\
@@ -24,6 +25,8 @@
             \texttt{ gonchu.b@gmail.com  }                                              \\[2.5ex]
             Federico Quevedo, \textit{Padrón Nro. 93159}                     \\
             \texttt{ federico1245@hotmail.com  }                                              \\[2.5ex]
+            Joaqu\'in Stankus, \textit{Padrón Nro. 93143}                     \\
+            \texttt{ joaquinstan@gmail.com  }                                              \\[2.5ex]
             \normalsize{2do. Cuatrimestre de 2013}                                      \\
             \normalsize{71.12, Estructura de las organizaciones}  \\
             \normalsize{Facultad de Ingeniería, Universidad de Buenos Aires}            \\
@@ -49,8 +52,125 @@ Acá va un resumen del trabajo práctico
 \newpage
 \section{Introducción}
 Intro
-\section{Cuadro de selección de empresa}
-TODO: Insertar Cuadro
+\section{Selección de la empresa}
+
+\subsection{Criterio de seleccion}
+
+Para seleccionar la empresa a relevar, tuvimos en cuenta las siguientes caracteristicas de cada empresa candidata:
+
+\begin{itemize}
+\item Calidad de \emph{Contacto} con la empresa 
+\item \emph{Localizaci\'on} de la empresa
+\item \emph{Tamaño} de la empresa
+\item \emph{Documentación} disponible 
+\end{itemize}
+
+Realizamos un cuadro comparativo de las empresas que se construye bajo la base de que cada categor\'ia (de las antes descriptas) tiene una valoraci\'on fija, determinada por la c\'atedra. En orden descendente tenemos, como categor\'ia más importante, al contacto (10), seguido por la localizaci\'on (8), luego el tamaño de la empresa (7) y, por \'ultimo, la documentación que la empresa pueda presentarnos (6).
+La confecci\'on del cuadro se realiza estimando, del uno al diez, que puntaje nosotros consideramos que alcanza cada empresa en cada categor\'ia. El puntaje es otorgado por el integrante del grupo que presenta a la empresa como candidata para el trabajo pr\'actico, entendiendo que es quien mayor conocimiento tiene acerca de la misma y puede llegar a un puntaje m\'as acertado. Luego de tener este puntaje estimado se posee a calcular un promedio ponderado con la valoraci\'on que indica la c\'atedra, obteniendo un puntaje global para cada una de las empresas.
+
+\subsection{Asignaci\'on de puntajes}
+
+\begin{itemize}
+
+\item \textbf{Tecin S.A.}\\
+\\
+\textit{Contacto - 9:}
+El tio de un integrante del grupo es director de la empresa. De vez en cuando esta de viaje, pero dentro de todo es accesible.
+
+\textit{Localización - 7:}
+La fabrica queda en Munro. La dirección de la misma es Gobernador Emilio Castro 3365, Carapachay, Munro, provincia de Buenos Aires. Nos queda cerca a la gran mayoría de los integrantes del grupo.
+
+\textit{Documentacion - 10:}
+Organigrama actualizado agosto 2013. La empresa está certificada IRAM ISO 9001:2008.
+
+\textit{Tamaño - 7:}
+Tiene alrededor de 50 empleados
+
+\item \textbf{Helados Pablo} \\
+\\
+\textit{Contacto - 10:}
+El dueño, Pablo, es el tío de uno de los integrantes, el cuál trabajó en la heladería varias temporadas y conoce todo el funcionamiento.
+
+\textit{Localización - 7:}
+La central de producción se encuentra en Berazategui, pero la sucursal más importante está en Quilmes, ubicada en zona de altas ventas.
+
+\textit{Documentacion - 2:}
+No posee una documentación actualizada ya que el flujo de trabajo depende de la temporada. En baja temporada cambia la mayoría del personal
+
+\textit{Tamaño - 2:}
+En temporada alta el tamaño supera los 50 empleados, pero en temporada baja no supera los 15.
+
+\item \textbf{Kimberly-Clark} \\
+\\
+\textit{Contacto - 4:}
+Uno de nosotros es pasante en la división de IT para latinoamérica, con poco contacto con las otras divisiones mas relacionadas con la estructura manufacturera.
+
+\textit{Localizacion - 6:}
+Hay plantas en Bernal y Pilar, aunque existen oficinas en Puerto Madero y el centro.
+
+\textit{Documentacion - 10:}
+Certifican ISO 14001, que pide tener la documentacion en orden.
+
+\textit{Tamaño - 2:}
+Es una empresa demasiado grande, con cerca de 1400 empleados solo en argentina.
+
+
+\item \textbf{Tecna} \\
+\\
+\textit{Contacto - 8:}
+Un integrante del grupo trabaja en la empresa. Contaría con el acceso a la información requerida para el trabajo práctico.
+
+\textit{Localización - 10:}
+La empresa esta ubicada en Puerto Madero a 5 cuadras de la sede de Paseo Colón, donde la mayoría cursamos.
+
+\textit{Documentacion - 7:}
+Organigrama actualizado en Abril 2013. Certificaciones ISO 9001:2008, ISO 14001: 2004 y OHSAS 18001: 2007.
+
+\textit{Tamaño - 5:}
+La empresa cuenta con alrededor de 400 empleados en Argentina y 200 mas distribuidos por sus 6 sedes en España, Perú, Bolivia,Colombia , Brasil y Ecuador
+
+\item \textbf{Gamar} \\
+\\
+\textit{Contacto - 8:}
+Un integrante del grupo conoce al dueño de la empresa, el cual mostró interés en colaborar.
+
+\textit{Localización - 4:}
+La empresa está localizada en el límite entre Tigre y San Fernando. Esta ubicación nos queda lejos a la mayoría de los integrantes.
+
+\textit{Documentacion - 5:}
+No presenta organigrama actualizado, pero si cuenta con certificaciones ISO y para las distintas automotoras a las cuales provee de partes.
+
+\textit{Tamaño - 6:}
+La empresa cuenta con alrededor de 120 empleados en su planta de producción.
+
+
+\end{itemize}
+
+
+\subsection{Resultados}
+
+\newcolumntype{x}[1]{%
+>{\centering\hspace{0pt}}p{#1}}%
+\begin{table}[!htbp]\centering
+\begin{tabular}{|x{3cm}|x{2cm}|x{2cm}|x{2cm}|x{2cm}|x{2cm}|x{2cm}|}
+\cline{1-7}
+  & \textbf{Valoraci\'on} & \textbf{Tecin} & \textbf{Helados Pablo} & \textbf{Kimberly-Clark} & \textbf{Tecna} & \textbf{Gamar} \tabularnewline
+\hline
+\textbf{Contacto} & 10 & 10 & 10 & 4 & 8 & 8\tabularnewline 
+\hline
+\textbf{Localizaci\'on} & 8 & 6 & 7 & 6 & 10 & 4\tabularnewline 
+\hline
+\textbf{Documentaci\'on} & 6 & 10 & 2 & 10 & 8 & 5\tabularnewline 
+\hline
+\textbf{Tamaño} & 7 & 7 & 2 & 2 & 5 & 6\tabularnewline 
+\hline
+ \multicolumn{2}{|c|}{\textbf{Total}} & 8,29 & 5,87 & 4,90 & 7,03 & 5,55\tabularnewline
+\hline
+\end{tabular}
+\end{table}
+
+La empresa con mayor puntaje, y sobre la cual realizamos el trabajo pr\'actico, fue \textbf{Tecin S.A}.
+
 \section{Empresa relevada}
 	\subsection{Preguntas}
 		\subsubsection{Preguntas introductorias}
