@@ -10,6 +10,7 @@
 \usepackage{pdfpages}
 \usepackage{enumitem}
 \usepackage{float}
+\usepackage{array}
 \title{		\textbf{Título}}
 
 \author{	Lucas Simonelli, \textit{Padrón Nro. 93111}                     \\
@@ -24,6 +25,8 @@
             \texttt{ gonchu.b@gmail.com  }                                              \\[2.5ex]
             Federico Quevedo, \textit{Padrón Nro. 93159}                     \\
             \texttt{ federico1245@hotmail.com  }                                              \\[2.5ex]
+            Joaqu\'in Stankus, \textit{Padrón Nro. 93143}                     \\
+            \texttt{ joaquinstan@gmail.com  }                                              \\[2.5ex]
             \normalsize{2do. Cuatrimestre de 2013}                                      \\
             \normalsize{71.12, Estructura de las organizaciones}  \\
             \normalsize{Facultad de Ingeniería, Universidad de Buenos Aires}            \\
@@ -49,8 +52,125 @@ Acá va un resumen del trabajo práctico
 \newpage
 \section{Introducción}
 Intro
-\section{Cuadro de selección de empresa}
-TODO: Insertar Cuadro
+\section{Selección de la empresa}
+
+\subsection{Criterio de seleccion}
+
+Para seleccionar la empresa a relevar, tuvimos en cuenta las siguientes caracteristicas de cada empresa candidata:
+
+\begin{itemize}
+\item Calidad de \emph{Contacto} con la empresa 
+\item \emph{Localizaci\'on} de la empresa
+\item \emph{Tamaño} de la empresa
+\item \emph{Documentación} disponible 
+\end{itemize}
+
+Realizamos un cuadro comparativo de las empresas que se construye bajo la base de que cada categor\'ia (de las antes descriptas) tiene una valoraci\'on fija, determinada por la c\'atedra. En orden descendente tenemos, como categor\'ia más importante, al contacto (10), seguido por la localizaci\'on (8), luego el tamaño de la empresa (7) y, por \'ultimo, la documentación que la empresa pueda presentarnos (6).
+La confecci\'on del cuadro se realiza estimando, del uno al diez, que puntaje nosotros consideramos que alcanza cada empresa en cada categor\'ia. El puntaje es otorgado por el integrante del grupo que presenta a la empresa como candidata para el trabajo pr\'actico, entendiendo que es quien mayor conocimiento tiene acerca de la misma y puede llegar a un puntaje m\'as acertado. Luego de tener este puntaje estimado se posee a calcular un promedio ponderado con la valoraci\'on que indica la c\'atedra, obteniendo un puntaje global para cada una de las empresas.
+
+\subsection{Asignaci\'on de puntajes}
+
+\begin{itemize}
+
+\item \textbf{Tecin S.A.}\\
+\\
+\textit{Contacto - 9:}
+El tio de un integrante del grupo es director de la empresa. De vez en cuando esta de viaje, pero dentro de todo es accesible.
+
+\textit{Localización - 7:}
+La fabrica queda en Munro. La dirección de la misma es Gobernador Emilio Castro 3365, Carapachay, Munro, provincia de Buenos Aires. Nos queda cerca a la gran mayoría de los integrantes del grupo.
+
+\textit{Documentacion - 10:}
+Organigrama actualizado agosto 2013. La empresa está certificada IRAM ISO 9001:2008.
+
+\textit{Tamaño - 7:}
+Tiene alrededor de 50 empleados
+
+\item \textbf{Helados Pablo} \\
+\\
+\textit{Contacto - 10:}
+El dueño, Pablo, es el tío de uno de los integrantes, el cuál trabajó en la heladería varias temporadas y conoce todo el funcionamiento.
+
+\textit{Localización - 7:}
+La central de producción se encuentra en Berazategui, pero la sucursal más importante está en Quilmes, ubicada en zona de altas ventas.
+
+\textit{Documentacion - 2:}
+No posee una documentación actualizada ya que el flujo de trabajo depende de la temporada. En baja temporada cambia la mayoría del personal
+
+\textit{Tamaño - 2:}
+En temporada alta el tamaño supera los 50 empleados, pero en temporada baja no supera los 15.
+
+\item \textbf{Kimberly-Clark} \\
+\\
+\textit{Contacto - 4:}
+Uno de nosotros es pasante en la división de IT para latinoamérica, con poco contacto con las otras divisiones mas relacionadas con la estructura manufacturera.
+
+\textit{Localizacion - 6:}
+Hay plantas en Bernal y Pilar, aunque existen oficinas en Puerto Madero y el centro.
+
+\textit{Documentacion - 10:}
+Certifican ISO 14001, que pide tener la documentacion en orden.
+
+\textit{Tamaño - 2:}
+Es una empresa demasiado grande, con cerca de 1400 empleados solo en argentina.
+
+
+\item \textbf{Tecna} \\
+\\
+\textit{Contacto - 8:}
+Un integrante del grupo trabaja en la empresa. Contaría con el acceso a la información requerida para el trabajo práctico.
+
+\textit{Localización - 10:}
+La empresa esta ubicada en Puerto Madero a 5 cuadras de la sede de Paseo Colón, donde la mayoría cursamos.
+
+\textit{Documentacion - 7:}
+Organigrama actualizado en Abril 2013. Certificaciones ISO 9001:2008, ISO 14001: 2004 y OHSAS 18001: 2007.
+
+\textit{Tamaño - 5:}
+La empresa cuenta con alrededor de 400 empleados en Argentina y 200 mas distribuidos por sus 6 sedes en España, Perú, Bolivia,Colombia , Brasil y Ecuador
+
+\item \textbf{Gamar} \\
+\\
+\textit{Contacto - 8:}
+Un integrante del grupo conoce al dueño de la empresa, el cual mostró interés en colaborar.
+
+\textit{Localización - 4:}
+La empresa está localizada en el límite entre Tigre y San Fernando. Esta ubicación nos queda lejos a la mayoría de los integrantes.
+
+\textit{Documentacion - 5:}
+No presenta organigrama actualizado, pero si cuenta con certificaciones ISO y para las distintas automotoras a las cuales provee de partes.
+
+\textit{Tamaño - 6:}
+La empresa cuenta con alrededor de 120 empleados en su planta de producción.
+
+
+\end{itemize}
+
+
+\subsection{Resultados}
+
+\newcolumntype{x}[1]{%
+>{\centering\hspace{0pt}}p{#1}}%
+\begin{table}[!htbp]\centering
+\begin{tabular}{|x{3cm}|x{2cm}|x{2cm}|x{2cm}|x{2cm}|x{2cm}|x{2cm}|}
+\cline{1-7}
+  & \textbf{Valoraci\'on} & \textbf{Tecin} & \textbf{Helados Pablo} & \textbf{Kimberly-Clark} & \textbf{Tecna} & \textbf{Gamar} \tabularnewline
+\hline
+\textbf{Contacto} & 10 & 10 & 10 & 4 & 8 & 8\tabularnewline 
+\hline
+\textbf{Localizaci\'on} & 8 & 6 & 7 & 6 & 10 & 4\tabularnewline 
+\hline
+\textbf{Documentaci\'on} & 6 & 10 & 2 & 10 & 8 & 5\tabularnewline 
+\hline
+\textbf{Tamaño} & 7 & 7 & 2 & 2 & 5 & 6\tabularnewline 
+\hline
+ \multicolumn{2}{|c|}{\textbf{Total}} & 8,29 & 5,87 & 4,90 & 7,03 & 5,55\tabularnewline
+\hline
+\end{tabular}
+\end{table}
+
+La empresa con mayor puntaje, y sobre la cual realizamos el trabajo pr\'actico, fue \textbf{Tecin S.A}.
+
 \section{Empresa relevada}
 	\subsection{Preguntas}
 		\subsubsection{Preguntas introductorias}
@@ -272,6 +392,7 @@ y productos ofrecidos.
 			\end{enumerate}
 	\include{minuta1}
 	\include{minuta2}
+	\include{minuta3}
 	
 	\subsection{Organigrama relevado}
 	Gracias a los datos provistos por el contacto, pudimos relevar el siguiente organigrama de la empresa en donde se ven las unidades organizativas principales.
@@ -281,42 +402,74 @@ y productos ofrecidos.
 		\caption{Organigrama actual TECIN S.A.}
 	\end{figure}
 	A partir de este organingrama, y con la información provista por el entrevistado, se relevaron las funciones de cada una de las unidades organizativas de la empresa.
-		\subsubsection{Directorio}
-			TODO: FUNCION DEL DIRECTORIO
 		\subsubsection{Gerencia General}
-			TODO: FUNCION DE LA GERENCIA GENERAL
+			Conducir, organizar, articular, supervisar y controlar el desarrollo de los procesos de gestión de las unidades orgánicas a su cargo.
 			\paragraph{Administración y Finanzas:}
-			TODO: FUNCION DE ADMIN Y FINANZAS
+			Planificar, dirigir y controlar la administración financiera, de personal y de los activos de la empresa, a través de sistemas de presupuesto, información contable, tesorería, administración y mantenimiento de los bienes físicos.
+			Contribuir al cumplimiento de las disposiciones legales y a la toma de decisiones, mediante la confección de estados contables, liquidaciones impositivas 
 			\paragraph{Suministros y Materiales:}
-			TODO: FUNCION DE SUMIN. Y MATERIALES
+			Asegurar el abastecimiento de componentes y materias primas a la línea de
+producción, tanto nacionales como de importación, como así también insumos,
+consumibles y bienes necesarios para el normal funcionamiento de la empresa.
+Asegurar que los elementos a producir sean realizados dentro de los plazos
+contractuales y al costo previsto al momento de su oferta.
 			\paragraph{Producción:}
-			TODO: FUNCION DE PRODUCCION
+			Lograr la producción de equipos y vehículos, como también la prestación de servicios
+internos, instalación y/o mantenimiento de sistemas Ansul R-102, comprometidos con los
+Clientes, en un todo de acuerdo a los requerimientos contractuales, los niveles de calidad,
+seguridad y en los plazos acordados en la programación, dentro del marco de políticas y
+procesos autorizados, y de acuerdo a los diseños transferidos por el área de ingeniería,
+mediante la asignación de recursos a los distintos sectores productivos, una adecuada
+planificación y un efectivo control de la producción y asignación de mano de obra.
+			Coordinar los proyectos desde el momento de su cotización y en la etapa de producción,
+garantizando que los mismos sean ejecutados cumpliendo los plazos contractuales y al costo
+previsto.
 			\paragraph{Ingeniería:}
-			TODO: FUNCION DE INGENIERIA
+			Desarrollar estudios de costos con alto grado de detalle, especificaciones y planos de
+oferta para la cotización de los productos producidos por la empresa.
+Desarrollar soluciones de transmisiones cardanicas para el accionamiento de
+bombas de incendios.
 			\paragraph{Gestión de calidad:}
-			TODO: FUNCION DE CALIDAD
+			Dirigir, planificar, organizar y controlar los procesos, procedimientos y actividades relacionados con la gestión de la calidad, con el fin de garantizar el cumplimiento de sus estándares y normas, así como, favorecer la mejora continua.
 			\paragraph{Ventas:}
-			TODO: FUNCION DE VENTAS
+			Planificar, organizar, dirigir, controlar y coordinar eficientemente el sistema comercial,
+diseñando estrategias que permitan el logro de los objetivos empresariales, dirigiendo el
+desarrollo de las actividades de marketing y las condiciones de venta de los servicios postales
+y afines.
 			\paragraph{Base San Julian:}
-			TODO: FUNCION DE BASE SAN JULIAN
+			Llevar adelante los servicios prestados por la empresa en las instalaciones del Cliente, garantizando las condiciones de calidad establecidas, condiciones seguras de trabajo para el personal a cargo, generando valor y fortaleciendo la imagen de la empresa frente al Cliente.
 		\subsubsection{Negocios Internacionales}
-			TODO: FUNCION DE NEGOCIOS INTERNACIONALES
-			\paragraph{Brasil:}
-			TODO: FUNCION DE BRASIL
-			\paragraph{Mercosur:}
-			TODO: FUNCION DE MERCOSUR
-			\paragraph{ExtraZona:}
-			TODO: FUNCION DE EXTRAZONA
+			Planificar, organizar, dirigir, controlar y coordinar eficientemente las actividades de marketing,
+diseñando estrategias que permitan la inserción de la producción de la compañía más allá del territorio nacional.
 
 
 \subsection{Mejora propuesta}
-	Luego de analizar y discutir sobre el organigrama provisto por la empresa y teniendo en cuenta los comentarios y sugerencias del contacto, el grupo decidio plantear como mejora la unificación de las áreas de Ingeniería y Producción en una sola gerencia de Operaciones, con el fin de centralizar y facilitar la coordinación de estas dos áreas, logrando así una toma de deciciones más acoplada entre los dos sectores más importantes de la organización. El organigrama resultante es el siguiente:
+	Luego de analizar y discutir sobre el organigrama provisto por la empresa y teniendo en cuenta los comentarios y sugerencias del contacto, el grupo decidió plantear como mejora la unificación de las áreas de Ingeniería y Producción en una sola gerencia de Operaciones, con el fin de centralizar y facilitar la coordinación de estas dos áreas, logrando así una toma de decisiones más acoplada entre los dos sectores más importantes de la organización. Además, también se planteó la separación del área de Administración y Finanzas en dos áreas independientes para hacer a la diferenciación horizontal  de la compañía y favorecer la especialización. El organigrama resultante es el siguiente:
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=15cm]{imagenes/mejoraOrganigrama.png}
 		\caption{Organigrama con mejora propuesta por el grupo}
 	\end{figure}
-
+	\paragraph{Administración:}
+			Contribuir al cumplimiento de las disposiciones legales y a la toma de decisiones, mediante la confección de estados contables, liquidaciones impositivas.
+	\paragraph{Finanzas y Gestión:}
+			Planificar, dirigir y controlar la administración financiera, de personal y de los activos de la empresa, a través de sistemas de presupuesto, información contable, tesorería, administración y mantenimiento de los bienes físicos.
+	\paragraph{Operaciones:}
+			Coordinar los proyectos desde el momento de su cotización y en la etapa de producción e ingeniería,
+garantizando que los mismos sean ejecutados cumpliendo los plazos contractuales y al costo previsto.
+	\paragraph{Producción:}
+			Lograr la producción de equipos y vehículos, como también la prestación de servicios
+internos, instalación y/o mantenimiento de sistemas Ansul R-102, comprometidos con los
+Clientes, en un todo de acuerdo a los requerimientos contractuales, los niveles de calidad,
+seguridad y en los plazos acordados en la programación, dentro del marco de políticas y
+procesos autorizados, y de acuerdo a los diseños transferidos por el área de ingeniería,
+mediante la asignación de recursos a los distintos sectores productivos, una adecuada
+planificación y un efectivo control de la producción y asignación de mano de obra.
+\paragraph{Ingeniería:}
+			Desarrollar estudios de costos con alto grado de detalle, especificaciones y planos de
+oferta para la cotización de los productos producidos por la empresa.
+Desarrollar soluciones de transmisiones cardanicas para el accionamiento de
+bombas de incendios.
 \newpage
 \section{Casos de estudio}
 	\subsection{Caso 1: Elevadores Hércules S.A.}
@@ -508,15 +661,14 @@ En vista de la situación, la alta dirección decidió perfeccionar el sistema d
 			\end{itemize}		
 			
 			\item \textit{¿Cúal es el problema evidente que enfrenta la empresa}\\
-			La empresa sufre constantemente cambios generacionales en la conducción, y  ahora la empresa es liderada por gente muy joven que tiene poco recorrido profesional, jubilando a toda persona con amplio conocimiento y experiencia dentro de la industria.Los nuevos encargados deciden dar otro enfoque a la empresa y necesitan establecer un plan de acción para los objetivos propuestos. Los objetivos son comenzar a fabricar nuevos productos para incorporarse en nuevos mercados,y adem\'as certificar las Normas ISO 9000 para dar un impacto en la estructura administrativa de la empresa.
+			La empresa sufre constantemente cambios generacionales en la conducción, y  ahora la empresa es liderada por gente muy joven que tiene poco recorrido profesional, jubilando a toda persona con amplio conocimiento y experiencia dentro de la industria.Los nuevos directivos deciden dar otro enfoque a la empresa y necesitan establecer un plan de acción para los objetivos propuestos. Los objetivos son comenzar a fabricar nuevos productos para incorporarse en nuevos mercados,y adem\'as certificar las Normas ISO 9000.
 			
 			\item \textit{¿Cúal es la parte de la estructura que surge como clave?}\\
-			Principalmente la clave es la Gerencia General que sufre un recambio importante con gente joven de poca experiencia en cargos gerenciales y sin conocimiento en la empresa.\\
-El área de Producción también tiene un papel importante debido a los nuevos objetivos de la empresa que implica la fabricación de nuevos productos, y la empresa, debido a los continuos cambios se queda sin gente de experiencia y la reemplaza por juventud profesional.\\
+			La parte identificada como clave es la tecnoestructura, ya que lo que cada directivo nuevo de la empresa lo que busca es la estandarización del trabajo, así como también tener un plan de producción e investigaciones operativas constantes que es lo que le dá el exito a la empresa. \\
 
 			
 			\item \textit{¿Cúal es el mecanismo de coordinación preponderante y por qué?}\\
-			El mecanismo de coordinación preponderante es la estandarización de los procesos producctivos y los recursos humanos.\\ El crecimiento de la empresa a lo largo del tiempo hizo aumentar la cantidad de empleados lo que requiere a su vez empleados calificados para las tareas técnicas, con el fin de certificar el proceso de producción actual. 
+			El mecanismo de coordinación preponderante es la estandarización de los procesos productivos.\\ El crecimiento de la empresa a lo largo del tiempo hizo aumentar la cantidad de empleados lo que requiere a su vez empleados calificados para las tareas técnicas, con el fin de certificar el proceso de producción actual. 
 						
 			\item \textit{Dibujar el organigrama actual de la companía}\\
 			\begin{figure}[!h]
@@ -537,18 +689,20 @@ Tambi\'en se encarga de administrar los sistemas de seguridad e higiene relacion
 			\end{itemize}
 
 						
-			\item \textit{Dibujar el organigrama que refleja el cambio propuesto por ustedes}\\
-			\begin{figure}[!h]
-			\includegraphics[width=1\textwidth]{imagenes/SolucionPropuestaGringo.png}
-			\end{figure}		
+			\item \textit{Dibujar el organigrama que refleja el cambio propuesto por ustedes}
+		
+			
+				\includegraphics[width=1\textwidth]{imagenes/SolucionPropuestaGringo.png}
+				
+				
+				
 						
 			\item \textit{Razonar como la propuesta hecha puede solucionar los problemas planteados}\\
-			En primer lugar se ve claramente que la empresa desea expandir el mercado fabricando nuevos productos.(Suelas de PVC, poliuretano y deportivas). Estos cambios obligan a modificar la estructura de Producci\'on por lo que una idea v\'alidad ser\'ia separar las nuevas areas de producci\'on pero dependiendo de la misma jefatura de producci\'on cl\'asica. Adem\'as a la gerencia de Desarrollo habr\'ia que separarla en 2 partes. La de los productos nuevos y la de los productos deportivos\\
-			La otra mejora planteada es la implementaci\'on de las normas ISO 9000. Para esto se debe promover un Jefe de Calidad que se encargue del control de los distintos procesos que serán certificados y que colabore con el gerente de desarrollo para lograr la certificación de las normas. Adem\'as el gerente general debe agregar un nivel de supervisores en la jefatura de producción para lograr una mayor especialización en la  producción de los nuevos productos a desarrollar. Para esto deber\'an capacitar a los empleados que sean asignados a los nuevos productos.
 			
-			\item \textit{Conclusiones}\\
-			La principal idea de la empresa es el progreso y seg\'un lo le\'ido lleva a cabo su objetivo a pesar de los problemas que se surgen. Al parecer la juventud le hace bien a la empresa aunque corre muchísimos riesgos ya que persona nueva encargada de la gerencia intenta "Revolucionar" la empresa cambiando el paradigma.\\
-			Hasta el momento vienen teniendo éxito lo que no implica que en alg\'un momento por deshacerse de las personas con experiencia y dejando a cargo a personas jóvenes, profesionales, pero aun así sin experiencia en la industria, se tomen decisiones que lleven a la ruina a la empresa.\\
+			En primer lugar se ve claramente que la empresa desea expandir el mercado fabricando nuevos productos.(Suelas de PVC, poliuretano y deportivas). Estos cambios obligan a modificar la estructura de Producci\'on por lo que una idea v\'alidad ser\'ia separar las nuevas areas de producci\'on pero dependiendo de la misma jefatura de producci\'on cl\'asica. Adem\'as a la gerencia de Desarrollo habr\'ia que separarla en 2 partes. La de los productos nuevos y la de los productos deportivos\\
+			La otra mejora planteada es la implementaci\'on de las normas ISO 9000. Para esto se debe promover un Jefe de Calidad que se encargue del control de los distintos procesos que serán certificados.\\ Adem\'as el gerente general debe agregar un nivel de supervisores en la jefatura de producción para lograr una mayor especialización en la  producción de los nuevos productos a desarrollar. Para esto deber\'an capacitar a los empleados que sean asignados a los nuevos productos.
+			
+
 			
 			\end{enumerate}
 		
